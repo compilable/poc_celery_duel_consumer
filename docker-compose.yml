@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  celery_worker_1:
+    build: .
+    networks:
+      - celery_workers
+    container_name: worker_1
+
+  celery_worker_2:
+    build: .
+    networks:
+      - celery_workers
+    container_name: worker_2
+
+networks: 
+  celery_workers:
