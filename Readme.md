@@ -1,6 +1,6 @@
 # POC [ Running Celery worker on multiple Docker instances - Duplicate Consumption ]
 
-A POC To test running Celery workes pointing to the same SQS (Standard) **won't** result in processing the same message.
+A POC To test running Celery workers pointing to the same SQS (Standard) **won't** result in processing the same message.
 
 ## SQS (Standard) setup:
 - Name : celery_test
